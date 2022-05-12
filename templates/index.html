@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>ACIT2911 Example</title>
+    </head>
+    <body align=center>
+        <div class="row" > 
+            <div style="width:44%"></div>
+            <div style="width: 24%"><legend><h1>ACIT 2911 CICD</h1></legend></div>
+            <div style="width:44%"></div>
+        </div>
+        <form style="checkbox-inline" action="/" method="POST">
+          
+          <label for="num1">Number1:</label>
+          <input type="text" name="num1"><br>
+          <label for="Operation">Operation:</label>
+          
+              <select name="Operator">
+                  <option>Addition</option>
+                  <option>Subtraction</option>
+                  <option>Multiplication</option>
+                  <option>Division</option>
+              </select> <br>
+         
+          <label for="num2">Number2:</label>
+          <input type="text" name="num2"><br>
+          <button type="submit", value="submit">Calculate</button>
+        </form>
+        {%if message%}
+        <p>The answer is {{message}}</p>
+        {%endif%}
+    </body>
+</html>
